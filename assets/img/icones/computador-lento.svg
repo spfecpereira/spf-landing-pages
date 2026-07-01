@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+  <!-- Monitor -->
+  <rect x="10" y="8" width="44" height="30" rx="3" stroke="#0F3B5C" stroke-width="2.5" fill="#F8FAFC"/>
+  <rect x="13" y="11" width="38" height="24" rx="2" fill="#E2E8F0"/>
+  <!-- Loading spinner on screen -->
+  <circle cx="32" cy="23" r="8" stroke="#DC2626" stroke-width="2" fill="none" stroke-dasharray="4 3" opacity="0.6"/>
+  <circle cx="32" cy="23" r="3" fill="#DC2626" opacity="0.8"/>
+  <!-- Stand -->
+  <rect x="26" y="38" width="12" height="3" rx="1" fill="#0F3B5C"/>
+  <rect x="30" y="41" width="4" height="10" fill="#0F3B5C"/>
+  <!-- Base -->
+  <rect x="22" y="51" width="20" height="3" rx="1.5" fill="#0F3B5C"/>
+  <!-- Sad face / problem indicator -->
+  <path d="M27 28a5 5 0 0010 0" stroke="#DC2626" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <!-- Small warning badge -->
+  <circle cx="52" cy="12" r="5" fill="#DC2626"/>
+  <text x="52" y="14" text-anchor="middle" fill="white" font-size="7" font-weight="bold">!</text>
+</svg>

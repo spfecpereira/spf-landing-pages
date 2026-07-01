@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+  <!-- Hard drive body -->
+  <rect x="8" y="22" width="48" height="26" rx="4" stroke="#0F3B5C" stroke-width="2.5" fill="#F8FAFC"/>
+  <!-- Drive detail lines -->
+  <line x1="14" y1="34" x2="50" y2="34" stroke="#E2E8F0" stroke-width="1.5"/>
+  <line x1="14" y1="40" x2="50" y2="40" stroke="#E2E8F0" stroke-width="1.5"/>
+  <!-- Data files falling out -->
+  <rect x="14" y="18" width="8" height="6" rx="1" fill="#DC2626" opacity="0.5" transform="rotate(-15 18 21)"/>
+  <rect x="28" y="14" width="8" height="6" rx="1" fill="#DC2626" opacity="0.4" transform="rotate(10 32 17)"/>
+  <rect x="40" y="16" width="6" height="5" rx="1" fill="#DC2626" opacity="0.3" transform="rotate(-5 43 18)"/>
+  <!-- Crack on drive -->
+  <path d="M22 22L18 26" stroke="#DC2626" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M18 22l4 4" stroke="#DC2626" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Warning triangle -->
+  <path d="M54 18l-4 6M50 18l4 6" stroke="#F59E0B" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- LED light -->
+  <circle cx="45" cy="50" r="2" fill="#DC2626"/>
+  <!-- USB port -->
+  <rect x="36" y="48" width="8" height="3" rx="1" fill="#E2E8F0" stroke="#CBD5E1" stroke-width="0.8"/>
+</svg>

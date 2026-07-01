@@ -140,100 +140,273 @@
     </section>
 
     <!-- ── PROBLEMA ──────────────────────────────────────────── -->
-    <section class="section--alt section" aria-labelledby="problema-heading">
+    <section class="section--alt section overflow-hidden" aria-labelledby="problema-heading">
       <div class="container-content">
-        <div class="max-w-2xl mx-auto text-center animate-reveal">
-          <p class="text-sm font-semibold text-accent-warm uppercase tracking-wide mb-3">Isso te incomoda?</p>
-          <h2 id="problema-heading" class="heading-section mb-6">
-            Seu negócio depende de tecnologia, mas ninguém te ajuda de verdade
+
+        <div class="max-w-2xl mx-auto text-center animate-reveal mb-10">
+          <span class="badge badge--warm mb-4">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#92400e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            Isso te incomoda?</span>
+          <h2 id="problema-heading" class="heading-section mb-3">
+            Tecnologia que mais atrapalha do que ajuda?
           </h2>
-          <p class="text-slate-600 leading-relaxed">
-            Computador lento, internet que cai na hora do atendimento, WhatsApp cheio de mensagem sem responder,
-            cliente que não te acha no Google. Você perde venda todo dia com problema simples de resolver.
+          <p class="text-slate-500 text-sm max-w-lg mx-auto">
+            Se algum desses cenários parece familiar, você não está sozinho.
           </p>
         </div>
 
-        <!-- Pain points grid -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 md:gap-5 mt-10 max-w-4xl mx-auto">
-          <div class="flex items-start gap-3 p-4 animate-reveal" data-delay="0">
-            <div class="w-8 h-8 rounded-lg bg-red-50 flex items-center justify-center flex-shrink-0 mt-0.5">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#DC2626" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6L6 18"/><path d="M6 6l12 12"/></svg>
+        <!-- Pain point cards with personality -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto">
+
+          <!-- Card 1: Computador -->
+          <div class="group relative bg-white rounded-2xl p-5 md:p-6 border border-red-100 shadow-sm hover:shadow-md transition-all duration-300 animate-reveal" data-delay="0">
+            <div class="flex items-start gap-4">
+              <div class="w-14 h-14 rounded-xl bg-red-50 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                <img src="../assets/img/icones/computador-lento.svg" alt="" width="32" height="32" class="w-8 h-8" loading="lazy">
+              </div>
+              <div class="flex-1 min-w-0">
+                <div class="flex items-center gap-2 mb-1 flex-wrap">
+                  <h3 class="font-bold text-slate-800 text-base">Computador e rede</h3>
+                  <span class="text-xs font-medium text-red-500 bg-red-50 px-2 py-0.5 rounded-full whitespace-nowrap">82% dos casos</span>
+                </div>
+                <p class="text-sm text-slate-500 leading-relaxed">PC lento, Wi-Fi que cai no meio do atendimento, impressora que nunca funciona. Você perde cliente enquanto tenta resolver.</p>
+              </div>
             </div>
-            <div>
-              <p class="font-semibold text-sm text-slate-800 mb-0.5">Computador e rede</p>
-              <p class="text-sm text-slate-500">Lento, travando, internet caindo</p>
-            </div>
-          </div>
-          <div class="flex items-start gap-3 p-4 animate-reveal" data-delay="100">
-            <div class="w-8 h-8 rounded-lg bg-red-50 flex items-center justify-center flex-shrink-0 mt-0.5">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#DC2626" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6L6 18"/><path d="M6 6l12 12"/></svg>
-            </div>
-            <div>
-              <p class="font-semibold text-sm text-slate-800 mb-0.5">WhatsApp bagunçado</p>
-              <p class="text-sm text-slate-500">Mensagem perdida, resposta atrasada</p>
-            </div>
-          </div>
-          <div class="flex items-start gap-3 p-4 animate-reveal" data-delay="200">
-            <div class="w-8 h-8 rounded-lg bg-red-50 flex items-center justify-center flex-shrink-0 mt-0.5">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#DC2626" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6L6 18"/><path d="M6 6l12 12"/></svg>
-            </div>
-            <div>
-              <p class="font-semibold text-sm text-slate-800 mb-0.5">Não aparece no Google</p>
-              <p class="text-sm text-slate-500">Cliente não te encontra online</p>
+            <!-- Solução hint on hover -->
+            <div class="mt-3 pt-3 border-t border-red-50 flex items-center gap-2 text-xs text-slate-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              <span>A SPF resolve em <strong class="text-slate-500">até 24h</strong></span>
             </div>
           </div>
-          <div class="flex items-start gap-3 p-4 animate-reveal" data-delay="300">
-            <div class="w-8 h-8 rounded-lg bg-red-50 flex items-center justify-center flex-shrink-0 mt-0.5">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#DC2626" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6L6 18"/><path d="M6 6l12 12"/></svg>
+
+          <!-- Card 2: WhatsApp -->
+          <div class="group relative bg-white rounded-2xl p-5 md:p-6 border border-red-100 shadow-sm hover:shadow-md transition-all duration-300 animate-reveal" data-delay="100">
+            <div class="flex items-start gap-4">
+              <div class="w-14 h-14 rounded-xl bg-red-50 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                <img src="../assets/img/icones/whatsapp-baguncado.svg" alt="" width="32" height="32" class="w-8 h-8" loading="lazy">
+              </div>
+              <div class="flex-1 min-w-0">
+                <div class="flex items-center gap-2 mb-1 flex-wrap">
+                  <h3 class="font-bold text-slate-800 text-base">WhatsApp bagunçado</h3>
+                  <span class="text-xs font-medium text-red-500 bg-red-50 px-2 py-0.5 rounded-full whitespace-nowrap">73% dos casos</span>
+                </div>
+                <p class="text-sm text-slate-500 leading-relaxed">Mensagem sem resposta, cliente esperando, promoção que você esqueceu de enviar. Seu WhatsApp podia estar vendendo 24h.</p>
+              </div>
             </div>
-            <div>
-              <p class="font-semibold text-sm text-slate-800 mb-0.5">Sem backup e segurança</p>
-              <p class="text-sm text-slate-500">Dados desprotegidos, risco real</p>
+            <div class="mt-3 pt-3 border-t border-red-50 flex items-center gap-2 text-xs text-slate-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              <span>Organizamos em <strong class="text-slate-500">até 48h</strong></span>
             </div>
           </div>
+
+          <!-- Card 3: Google -->
+          <div class="group relative bg-white rounded-2xl p-5 md:p-6 border border-amber-100 shadow-sm hover:shadow-md transition-all duration-300 animate-reveal" data-delay="200">
+            <div class="flex items-start gap-4">
+              <div class="w-14 h-14 rounded-xl bg-amber-50 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                <img src="../assets/img/icones/invisivel-google.svg" alt="" width="32" height="32" class="w-8 h-8" loading="lazy">
+              </div>
+              <div class="flex-1 min-w-0">
+                <div class="flex items-center gap-2 mb-1 flex-wrap">
+                  <h3 class="font-bold text-slate-800 text-base">Ninguém te acha no Google</h3>
+                  <span class="text-xs font-medium text-amber-500 bg-amber-50 px-2 py-0.5 rounded-full whitespace-nowrap">61% dos casos</span>
+                </div>
+                <p class="text-sm text-slate-500 leading-relaxed">Cliente pesquisa seu serviço e não acha. Vai pro concorrente. Você perde venda sem nem saber.</p>
+              </div>
+            </div>
+            <div class="mt-3 pt-3 border-t border-amber-50 flex items-center gap-2 text-xs text-slate-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              <span>Colocamos seu negócio <strong class="text-slate-500">no mapa</strong></span>
+            </div>
+          </div>
+
+          <!-- Card 4: Segurança -->
+          <div class="group relative bg-white rounded-2xl p-5 md:p-6 border border-red-100 shadow-sm hover:shadow-md transition-all duration-300 animate-reveal" data-delay="300">
+            <div class="flex items-start gap-4">
+              <div class="w-14 h-14 rounded-xl bg-red-50 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                <img src="../assets/img/icones/sem-backup.svg" alt="" width="32" height="32" class="w-8 h-8" loading="lazy">
+              </div>
+              <div class="flex-1 min-w-0">
+                <div class="flex items-center gap-2 mb-1 flex-wrap">
+                  <h3 class="font-bold text-slate-800 text-base">Sem backup nem segurança</h3>
+                  <span class="text-xs font-medium text-red-500 bg-red-50 px-2 py-0.5 rounded-full whitespace-nowrap">Alto risco</span>
+                </div>
+                <p class="text-sm text-slate-500 leading-relaxed">Um vírus, um roubo, um HD que queima — e seus dados somem. Cliente, nota fiscal, tudo.</p>
+              </div>
+            </div>
+            <div class="mt-3 pt-3 border-t border-red-50 flex items-center gap-2 text-xs text-slate-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              <span>Backup automático <strong class="text-slate-500">e seguro</strong></span>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
 
-    <!-- ── SOLUÇÃO ───────────────────────────────────────────── -->
-    <section class="section" aria-labelledby="solucao-heading">
+    <!-- ── SOLUÇÃO ── antes/depois ──────────────────────────── -->
+    <section class="section overflow-hidden" aria-labelledby="solucao-heading"
+             class="section--gradient">
       <div class="container-content">
-        <div class="max-w-2xl mx-auto text-center animate-reveal">
-          <p class="text-sm font-semibold text-primary-light uppercase tracking-wide mb-3">A solução</p>
-          <h2 id="solucao-heading" class="heading-section mb-6">
-            A SPF organiza a tecnologia do seu negócio. Você cuida do que importa: seus clientes.
+
+        <div class="text-center mb-12 animate-reveal">
+          <span class="badge badge--primary mb-4">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            A solução SPF
+          </span>
+          <h2 id="solucao-heading" class="heading-section mb-3">
+            Seu problema vira solução — <span class="text-accent">antes &amp; depois</span>
           </h2>
-          <p class="text-slate-600 leading-relaxed">
-            Somos de Ibiúna e entendemos a realidade do pequeno negócio.
-            Nada de termos técnicos, nada de projeto longo e caro.
-            Solução prática, rápida e com preço justo.
+          <p class="text-slate-500 text-sm max-w-lg mx-auto">
+            Cada problema tem uma solução clara. Rápida. E com preço que cabe no seu negócio.
           </p>
         </div>
 
-        <!-- 3 pillars -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mt-12 max-w-4xl mx-auto">
-          <div class="text-center animate-reveal" data-delay="0">
-            <div class="w-14 h-14 rounded-2xl bg-primary/8 flex items-center justify-center mx-auto mb-4">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0F3B5C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        <!-- Painéis Antes → Depois -->
+        <div class="space-y-4 max-w-3xl mx-auto">
+
+          <!-- Painel 1: Computador -->
+          <div class="bg-white rounded-2xl p-5 md:p-6 border border-slate-100 shadow-sm hover:shadow-md transition-all duration-300 animate-reveal" data-delay="0">
+            <div class="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-4 md:gap-6 items-center">
+              <div class="flex items-center gap-3 opacity-60">
+                <div class="w-10 h-10 rounded-lg bg-red-50 flex items-center justify-center flex-shrink-0">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#DC2626" stroke-width="2" stroke-linecap="round"><path d="M18 6L6 18"/><path d="M6 6l12 12"/></svg>
+                </div>
+                <div>
+                  <p class="text-xs text-red-500 font-semibold">Antes</p>
+                  <p class="text-sm text-slate-400">PC lento, internet caindo</p>
+                </div>
+              </div>
+              <div class="flex items-center justify-center">
+                <!-- Mobile: vertical line -->
+                <div class="w-px h-8 bg-accent/20 md:hidden"></div>
+                <!-- Desktop: circle check -->
+                <div class="hidden md:flex w-8 h-8 rounded-full bg-accent/10 items-center justify-center">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
+              </div>
+              <div class="flex items-center gap-3 md:justify-end">
+                <div class="text-right">
+                  <p class="text-xs text-accent font-semibold">Depois</p>
+                  <p class="text-sm font-semibold text-slate-800">TI Essencial — <span class="text-primary">R$ 297/mês</span></p>
+                </div>
+                <div class="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                </div>
+              </div>
             </div>
-            <h3 class="font-semibold text-lg mb-2">Rápido</h3>
-            <p class="text-sm text-slate-500 leading-relaxed">Em 48h seu WhatsApp está organizado. Em uma visita, sua rede e computadores estão funcionando.</p>
           </div>
-          <div class="text-center animate-reveal" data-delay="150">
-            <div class="w-14 h-14 rounded-2xl bg-primary/8 flex items-center justify-center mx-auto mb-4">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0F3B5C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+
+          <!-- Painel 2: WhatsApp -->
+          <div class="bg-white rounded-2xl p-5 md:p-6 border border-slate-100 shadow-sm hover:shadow-md transition-all duration-300 animate-reveal" data-delay="100">
+            <div class="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-4 md:gap-6 items-center">
+              <div class="flex items-center gap-3 opacity-60">
+                <div class="w-10 h-10 rounded-lg bg-red-50 flex items-center justify-center flex-shrink-0">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#DC2626" stroke-width="2" stroke-linecap="round"><path d="M18 6L6 18"/><path d="M6 6l12 12"/></svg>
+                </div>
+                <div>
+                  <p class="text-xs text-red-500 font-semibold">Antes</p>
+                  <p class="text-sm text-slate-400">WhatsApp bagunçado</p>
+                </div>
+              </div>
+              <div class="flex items-center justify-center">
+                <!-- Mobile: vertical line -->
+                <div class="w-px h-8 bg-accent/20 md:hidden"></div>
+                <!-- Desktop: circle check -->
+                <div class="hidden md:flex w-8 h-8 rounded-full bg-accent/10 items-center justify-center">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
+              </div>
+              <div class="flex items-center gap-3 md:justify-end">
+                <div class="text-right">
+                  <p class="text-xs text-accent font-semibold">Depois</p>
+                  <p class="text-sm font-semibold text-slate-800">WhatsApp Business — <span class="text-primary">R$ 297/mês</span></p>
+                </div>
+                <div class="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
+                </div>
+              </div>
             </div>
-            <h3 class="font-semibold text-lg mb-2">Simples</h3>
-            <p class="text-sm text-slate-500 leading-relaxed">Você não precisa entender de tecnologia. A gente resolve e te explica só o essencial, em português claro.</p>
           </div>
-          <div class="text-center animate-reveal" data-delay="300">
-            <div class="w-14 h-14 rounded-2xl bg-primary/8 flex items-center justify-center mx-auto mb-4">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0F3B5C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+
+          <!-- Painel 3: Presença Digital -->
+          <div class="bg-white rounded-2xl p-5 md:p-6 border border-slate-100 shadow-sm hover:shadow-md transition-all duration-300 animate-reveal" data-delay="200">
+            <div class="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-4 md:gap-6 items-center">
+              <div class="flex items-center gap-3 opacity-60">
+                <div class="w-10 h-10 rounded-lg bg-amber-50 flex items-center justify-center flex-shrink-0">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#DC2626" stroke-width="2" stroke-linecap="round"><path d="M18 6L6 18"/><path d="M6 6l12 12"/></svg>
+                </div>
+                <div>
+                  <p class="text-xs text-red-500 font-semibold">Antes</p>
+                  <p class="text-sm text-slate-400">Invisível no Google</p>
+                </div>
+              </div>
+              <div class="flex items-center justify-center">
+                <!-- Mobile: vertical line -->
+                <div class="w-px h-8 bg-accent/20 md:hidden"></div>
+                <!-- Desktop: circle check -->
+                <div class="hidden md:flex w-8 h-8 rounded-full bg-accent/10 items-center justify-center">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
+              </div>
+              <div class="flex items-center gap-3 md:justify-end">
+                <div class="text-right">
+                  <p class="text-xs text-accent font-semibold">Depois</p>
+                  <p class="text-sm font-semibold text-slate-800">Presença Digital — <span class="text-primary">a partir de R$ 697</span></p>
+                </div>
+                <div class="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="10" r="3"/><path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 10-16 0c0 3 2.7 7 8 11.7z"/></svg>
+                </div>
+              </div>
             </div>
-            <h3 class="font-semibold text-lg mb-2">Preço justo</h3>
-            <p class="text-sm text-slate-500 leading-relaxed">A partir de R$ 297/mês. Mais barato que uma tarde perdida com computador parado ou cliente sem resposta.</p>
           </div>
+
+          <!-- Painel 4: Automação -->
+          <div class="bg-white rounded-2xl p-5 md:p-6 border border-slate-100 shadow-sm hover:shadow-md transition-all duration-300 animate-reveal" data-delay="300">
+            <div class="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-4 md:gap-6 items-center">
+              <div class="flex items-center gap-3 opacity-60">
+                <div class="w-10 h-10 rounded-lg bg-red-50 flex items-center justify-center flex-shrink-0">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#DC2626" stroke-width="2" stroke-linecap="round"><path d="M18 6L6 18"/><path d="M6 6l12 12"/></svg>
+                </div>
+                <div>
+                  <p class="text-xs text-red-500 font-semibold">Antes</p>
+                  <p class="text-sm text-slate-400">Tarefas manuais repetitivas</p>
+                </div>
+              </div>
+              <div class="flex items-center justify-center">
+                <!-- Mobile: vertical line -->
+                <div class="w-px h-8 bg-accent/20 md:hidden"></div>
+                <!-- Desktop: circle check -->
+                <div class="hidden md:flex w-8 h-8 rounded-full bg-accent/10 items-center justify-center">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
+              </div>
+              <div class="flex items-center gap-3 md:justify-end">
+                <div class="text-right">
+                  <p class="text-xs text-accent font-semibold">Depois</p>
+                  <p class="text-sm font-semibold text-slate-800">Automação Express — <span class="text-primary">a partir de R$ 497</span></p>
+                </div>
+                <div class="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
+
+        <!-- CTA suave -->
+        <div class="text-center mt-10 animate-reveal">
+          <p class="text-sm text-slate-400 mb-4">Sua dor de cabeça vira solução em uma conversa.</p>
+          <a href="https://wa.me/551142743566?text=Olá!%20Quero%20resolver%20meus%20problemas%20de%20tecnologia."
+             class="btn-whatsapp"
+             data-wa-track="solucao_cta_principal"
+             target="_blank"
+             rel="noopener noreferrer">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884"/></svg>
+            Resolver meus problemas
+          </a>
+        </div>
+
       </div>
     </section>
 

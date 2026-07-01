@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+  <!-- Phone body -->
+  <rect x="18" y="6" width="28" height="52" rx="5" stroke="#0F3B5C" stroke-width="2.5" fill="#F8FAFC"/>
+  <!-- Screen -->
+  <rect x="21" y="12" width="22" height="40" rx="2" fill="#F1F5F9"/>
+  <!-- WhatsApp chat bubbles - scattered -->
+  <rect x="23" y="14" width="16" height="5" rx="2.5" fill="#E2E8F0"/>
+  <rect x="25" y="21" width="14" height="5" rx="2.5" fill="#E2E8F0"/>
+  <!-- Unread badge -->
+  <circle cx="39" cy="16" r="3" fill="#DC2626"/>
+  <text x="39" y="17" text-anchor="middle" fill="white" font-size="4" font-weight="bold">3</text>
+  <!-- Scattered messages -->
+  <rect x="25" y="29" width="12" height="4" rx="2" fill="#FED7AA" opacity="0.7"/>
+  <rect x="27" y="36" width="10" height="4" rx="2" fill="#FED7AA" opacity="0.5"/>
+  <rect x="24" y="43" width="14" height="4" rx="2" fill="#E2E8F0"/>
+  <!-- Exclamation marks -->
+  <text x="23" y="33" fill="#DC2626" font-size="6" font-weight="bold" opacity="0.7">!</text>
+  <text x="25" y="40" fill="#DC2626" font-size="5" font-weight="bold" opacity="0.5">!</text>
+  <!-- Notification dot -->
+  <circle cx="44" cy="10" r="2" fill="#DC2626"/>
+  <!-- Home button -->
+  <circle cx="32" cy="54" r="3" stroke="#CBD5E1" stroke-width="1.2" fill="none"/>
+</svg>
