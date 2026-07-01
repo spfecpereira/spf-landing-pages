@@ -191,9 +191,10 @@ body {
 }
 
 /* ----------------------------------------------------------
-   5. COMPONENT: Cards
+   5. COMPONENT: Cards (Enhanced with Gradient Border)
    ---------------------------------------------------------- */
 .card-service {
+  position: relative;
   background: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-xl);
@@ -201,12 +202,58 @@ body {
   box-shadow: var(--shadow-card);
   transition:
     transform var(--transition-base),
-    box-shadow var(--transition-base);
+    box-shadow var(--transition-base),
+    border-color var(--transition-base);
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* Gradient overlay on hover */
+.card-service::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: var(--radius-xl);
+  padding: 1.5px;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity var(--transition-base);
+  pointer-events: none;
+  z-index: -1;
 }
 
 .card-service:hover {
-  transform: translateY(-4px);
+  transform: translateY(-6px);
   box-shadow: var(--shadow-card-hover);
+  border-color: transparent;
+}
+
+.card-service:hover::before {
+  opacity: 1;
+}
+
+/* Icon container sizes - consistent stroke icons */
+.card-service .icon-box {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.875rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.card-service:hover .icon-box {
+  transform: scale(1.05);
+}
+
+.card-service .icon-box svg {
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 /* ----------------------------------------------------------
@@ -247,6 +294,74 @@ body {
   color: #FFFFFF;
 }
 
+/* Hero with geometric background */
+.hero-geometric {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-geometric::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 80% 60% at 0% 20%, rgba(15, 59, 92, 0.03) 0%, transparent 100%),
+    radial-gradient(ellipse 60% 50% at 100% 80%, rgba(16, 185, 129, 0.04) 0%, transparent 100%),
+    radial-gradient(ellipse 50% 40% at 50% 0%, rgba(245, 158, 11, 0.02) 0%, transparent 100%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hero-geometric > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Geometric decorative shapes */
+.hero-shapes {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hero-shapes .shape {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.06;
+}
+
+.hero-shapes .shape--1 {
+  width: 300px;
+  height: 300px;
+  background: var(--color-primary);
+  top: -80px;
+  right: -60px;
+}
+
+.hero-shapes .shape--2 {
+  width: 200px;
+  height: 200px;
+  background: var(--color-accent);
+  bottom: -40px;
+  left: -60px;
+}
+
+.hero-shapes .shape--3 {
+  width: 120px;
+  height: 120px;
+  background: var(--color-accent-warm);
+  top: 40%;
+  left: 60%;
+}
+
+@media (max-width: 768px) {
+  .hero-shapes .shape--1 { width: 180px; height: 180px; top: -40px; right: -40px; }
+  .hero-shapes .shape--2 { width: 120px; height: 120px; bottom: -20px; left: -30px; }
+  .hero-shapes .shape--3 { display: none; }
+}
+
 /* ----------------------------------------------------------
    8. COMPONENT: Badge / Tag
    ---------------------------------------------------------- */
@@ -274,6 +389,16 @@ body {
 .badge--warm {
   background-color: rgba(245, 158, 11, 0.1);
   color: #92400e;
+}
+
+.badge--popular {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+  color: #fff;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.25rem 0.75rem;
+  box-shadow: 0 2px 8px rgba(15, 59, 92, 0.25);
 }
 
 /* ----------------------------------------------------------
