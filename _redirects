@@ -2,3 +2,5 @@
 
 # Root → Ibiúna (página principal)
 / /servicos-ti-ibiuna/ 301
+
+# Subdomain aliases (handled by _middleware.ts for mairinque/saoroque)

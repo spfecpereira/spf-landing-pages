@@ -1,5 +1,6 @@
 # Cloudflare Pages Headers
 
+# Cache assets permanently
 /assets/*
   Cache-Control: public, max-age=31536000, immutable
 
@@ -18,8 +19,38 @@
 *.js
   Cache-Control: public, max-age=31536000, immutable
 
-# Security headers for HTML
-/*.html
+# Security headers for all HTML pages
+/servicos-ti-ibiuna/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+
+/presenca-digital-ibiuna/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+
+/whatsapp-business-ibiuna/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+
+/automacao-para-empresas-ibiuna/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+
+/suporte-ti-ibiuna/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+
+/servicos-ti-mairinque/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+
+/servicos-ti-sao-roque/*
   X-Content-Type-Options: nosniff
   X-Frame-Options: DENY
   Referrer-Policy: strict-origin-when-cross-origin
